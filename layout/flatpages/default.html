@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="keywords" content="Medical,Cannabis,Dispensary,Fountian,fountain,club,FWB,FWB LA,Fountain of Well Being LA" />
+        <meta name="description" content="The Fountain of Wellbeing - LA's premier medical marijuana collective." />
+        <meta http-equiv="content-type" content="text/html; charset=us-ascii" />
+        <title>{% block title %}The Fountain of Wellbeing - {{ flatpage.title }} {% endblock %}</title>
+        <script type="text/javascript" src="{{ MEDIA_URL }}js/jquery.js"></script>
+        <script type="text/javascript" src="{{ MEDIA_URL }}js/FancyZoom.js"></script>
+        <script type="text/javascript" src="{{ MEDIA_URL }}js/FancyZoomHTML.js"></script>
+        <script type="text/javascript" src="{{ MEDIA_URL }}js/index.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/index.css" />
+    </head>
+ <body>
+ 	<div id="wrapper">
+    	<div id="header">
+
+        </div>
+
+        <div id="menu">
+        	<ul>
+                <li><a href="/">Home</a></li>
+				<li><a href="/menu/">Menu</a></li>
+                <li><a href="/about/">About US</a></li>
+				<li><a href="/contact/">Contact</a></li>
+                <li><a href="/map/">Map</a></li>
+            </ul>
+        </div>
+       
+		<div id="page">
+            
+          		{% load flatcontent_tags %}
+	            {% render flatpage.content %}
+               
+		<div class="c1"> 
+		</div>
+		
+	</div>
+
+	<div id="footer">
+		<p>
+			<a href = "http://2theleft.la">
+	 	  Copyright (c) 2008 Fountain of Wellbeing. All rights reserved. Design by 2TheLeft.
+          </a> <br/><small><a href="/admin">Staff</a></small>
+        </p>
+   </div> 
+</div>
+<script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+  try {
+    var pageTracker = _gat._getTracker("UA-9438452-3");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+</body>
+</html>
+

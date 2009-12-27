@@ -1,0 +1,47 @@
+{% extends "base.html" %} 
+
+{% block post_content %}		
+
+<!-- Table Start -->
+<TABLE>
+    <TR>
+        <TD>
+
+{% for a in strain %}
+
+<TABLE>
+    <TR>
+        <TH>
+            
+<a href="{{MEDIA_URL}}{{ a.photo|default:"images/coming_soon1.png" }}" title="{{ a.description }}" >
+   <img src="{{MEDIA_URL}}{{ a.thumbnail|default:"images/tcoming_soon1.png" }}" alt="" height="125" width="114">
+</a>
+        </TH>
+    </TR>
+<TR>
+<TH>
+
+{{a.name}}
+
+</TH>
+
+</TR>
+</TABLE>
+</TD>
+<TD>
+
+{% if forloop.counter|divisibleby:"7"  %}
+</TR></TABLE><br/><TABLE><TR> <TD>
+{% endif %}
+
+
+{% endfor %}
+</TR></TABLE>
+
+
+
+{% endblock %}
+
+{% block sidebar %}
+{% endblock %}
+ 
