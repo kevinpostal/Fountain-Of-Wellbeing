@@ -57,6 +57,14 @@ class Strain(models.Model):
         super(Strain, self).save() 
         
     def thumb_photo(self):
+	 #  return '<img src = %s%s height="150" width="150"></img>' % (settings.MEDIA_URL,self.thumbnail)
+	 #   return '<img src = "/static/images/tcoming_soon1.png" height="150" width="150"></img>')
+        
+        if self.thumbnail:
+	    self.thumbnail
+  	    return '<img src = %s%s height="150" width="150"></img>' % (settings.MEDIA_URL,self.thumbnail)
 
-        return '<img src = %s%s height="150" width="150"></img>' % (settings.MEDIA_URL,self.thumbnail)
+	else:
+    	    return '<img src = %s%s height="150" width="150"></img>' % (settings.MEDIA_URL,'images/tcoming_soon1.png') 
+    
     thumb_photo.allow_tags=True

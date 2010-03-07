@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/715/trunk/grappelli
+END
+admin.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/647/trunk/grappelli/admin.py
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/647/trunk/grappelli/LICENSE
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/647/trunk/grappelli/__init__.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/647/trunk/grappelli/settings.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/647/trunk/grappelli/urls.py
+END
+fields.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/647/trunk/grappelli/fields.py
+END
+sites.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/647/trunk/grappelli/sites.py
+END

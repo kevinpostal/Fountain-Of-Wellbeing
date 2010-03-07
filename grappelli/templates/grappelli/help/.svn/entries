@@ -1,0 +1,52 @@
+8
+
+dir
+756
+http://django-grappelli.googlecode.com/svn/trunk/grappelli/templates/grappelli/help
+http://django-grappelli.googlecode.com/svn
+
+
+
+2010-01-08T16:08:24.968110Z
+715
+klemens.mantzos
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+35d8ae9e-4555-0410-bd5f-97af217b58d9
+
+help.html
+file
+
+
+
+
+2010-02-24T08:51:32.000000Z
+3e0cccf58cff74176a4940f1a93d60e8
+2009-11-13T16:48:01.754508Z
+647
+sehmaschine
+
+help_detail.html
+file
+
+
+
+
+2010-02-24T08:51:32.000000Z
+de61cf9934cee4a53e8f38ca57f0cb52
+2009-11-13T16:48:01.754508Z
+647
+sehmaschine
+

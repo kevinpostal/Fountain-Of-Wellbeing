@@ -17,10 +17,11 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     (r'^admin/(.*)', admin.site.root),
+    (r'^grappelli/', include('grappelli.urls')),     
+
+ #  (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '%s/media' % settings.PROJECT_PATH }),
      
-    (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '%s/media' % settings.PROJECT_PATH }),
-     
-    (r'^medias/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '%s/medias' % settings.PROJECT_PATH }),
+ #  (r'^medias/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '%s/medias' % settings.PROJECT_PATH }),
         
     # Contact Page Urls 
     (r'^contact/', include('contact_form.urls')),

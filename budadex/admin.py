@@ -28,8 +28,9 @@ class BudAdmin(admin.ModelAdmin):
     
     make_inactive.short_description = "Mark selected as inactive"
 
+
 # admin stuff
-    list_display = ( 'name','description', 'thumb_photo','active')
+    list_display = ( 'name','description', 'thumb_photo','active',)
     list_filter = ('active','last_modified')    
 
     

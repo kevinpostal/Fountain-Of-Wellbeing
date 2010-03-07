@@ -1,4 +1,5 @@
-DEBUG = True 
+
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -12,10 +13,11 @@ DATABASE_ENGINE = 'postgresql_psycopg2'           # 'postgresql_psycopg2', 'post
 DATABASE_NAME = 'fwbla'             # Or path to database file if using sqlite3.
 DATABASE_USER = 'fwbla'             # Not used with sqlite3.
 DATABASE_PASSWORD = 'fwbla420!'         # Not used with sqlite3.
-DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.
-DATABASE_PORT = ''             # Set to empty string for default. Not used with sqlite3.
+DATABASE_HOST = '10.176.97.57'             # Set to empty string for localhost. Not used with sqlite3.
+DATABASE_PORT = '5432'             # Set to empty string for default. Not used with sqlite3.
 
 #Email Shit
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'noreply@2theleft.la'
 EMAIL_HOST_PASSWORD = 'cuntfuck'

@@ -3,6 +3,9 @@ import os
 # Django settings for project.
 PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 
+
+GRAPPELLI_ADMIN_TITLE = 'FWBLA'
+
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
@@ -70,6 +73,7 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+    'grappelli',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',

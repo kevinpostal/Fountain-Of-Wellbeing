@@ -1,0 +1,52 @@
+8
+
+dir
+756
+http://django-grappelli.googlecode.com/svn/trunk/grappelli/extras
+http://django-grappelli.googlecode.com/svn
+
+
+
+2010-01-08T16:08:24.968110Z
+715
+klemens.mantzos
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+35d8ae9e-4555-0410-bd5f-97af217b58d9
+
+__init__.py
+file
+
+
+
+
+2010-02-24T08:51:28.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2009-11-13T16:48:01.754508Z
+647
+sehmaschine
+
+BeautifulSoup.py
+file
+
+
+
+
+2010-02-24T08:51:28.000000Z
+1433407a87b3e41809a32d9e1220bd7f
+2009-11-13T16:48:01.754508Z
+647
+sehmaschine
+
