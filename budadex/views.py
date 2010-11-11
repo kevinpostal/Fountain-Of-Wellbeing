@@ -16,6 +16,6 @@ def menu_view(request):
     
     #Define Storage dictonary for active menu
 
-    context['strain'] = Strain.objects.filter(active=True).values()
+    context['strain'] = Strain.objects.filter(active=True).order_by('name').values()
     
     return render_to_response('menu.html',context,context_instance=RequestContext(request))
