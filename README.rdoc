@@ -1,2 +1,9 @@
-== Fountain Of Wellbeing
+= Fountain Of Wellbeing
 The Fountain of Wellbeing is a cooperative, established to assist qualified patients by providing safe, reliable access to medicinal grade cannabis as well as providing a safe, supportive community for our members.
+=== Minimum Requirements
+* Python
+* Django
+
+== Copyright
+
+Copyright (c) 2010 Kevin Postal. See LICENSE for details.
