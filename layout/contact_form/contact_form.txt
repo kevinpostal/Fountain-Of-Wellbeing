@@ -1,0 +1,3 @@
+The sender: {{ name }}
+The sender's e-mail address: {{ email }}
+Any comments: {% autoescape off %}{{ body }}{% endautoescape %}
