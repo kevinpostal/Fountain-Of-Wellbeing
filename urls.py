@@ -16,7 +16,6 @@ urlpatterns = patterns('',
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    (r'^admin/(.*)', admin.site.root),
     (r'^grappelli/', include('grappelli.urls')),     
 
  #  (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '%s/media' % settings.PROJECT_PATH }),
@@ -28,7 +27,10 @@ urlpatterns = patterns('',
     
     # Menu Pages Urls
     (r'^menu/', 'budadex.views.menu_view'),
-    
+
+    #Admin
+    (r'^admin/(.*)', admin.site.root),
+
     # Home Redirect
     (r'^$', 'django.views.generic.simple.redirect_to', {'url':'/home'})
 
