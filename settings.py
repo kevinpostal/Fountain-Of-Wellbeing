@@ -83,4 +83,5 @@ INSTALLED_APPS = (
     'budadex',
     'contact_form',
     'flatcontent',
+    'text_runner',
 )
