@@ -1,0 +1,28 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+
+<h1>Enter Text Message:</h1>
+
+<form action="" method="post">
+{% csrf_token %}
+{{ form }}
+    <br />
+    <p>The following people will be texted:</p>
+
+    <ul>{{ users|unordered_list }}</ul>
+
+    <input type="hidden" name="action" value="Text_Selected" />
+    <input type="submit" name="apply" value="Send Texts" />
+</form>
+
+
+
+
+{{ test }}
+<br>
+<br />
+{% for i in test %}
+{{i}}
+{% endfor %}
+{% endblock %}

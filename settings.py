@@ -38,7 +38,7 @@ MEDIA_URL = '/static/'
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
 # Examples: "http://foo.com/media/", "/media/".
-ADMIN_MEDIA_PREFIX = '/adminmedia/'
+ADMIN_MEDIA_PREFIX = '/admin-media/'
 
 #Cache System (memcache)
 #CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
@@ -84,4 +84,8 @@ INSTALLED_APPS = (
     'contact_form',
     'flatcontent',
     'text_runner',
+    'django_extensions',
 )
+
+#GOOGLE_ANALYTICS
+GOOGLE_ANALYTICS_MODEL = True

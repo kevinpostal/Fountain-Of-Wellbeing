@@ -22,7 +22,6 @@ class Strain(models.Model):
 
         #Makes sure theres even a photo to Convert
         if self.photo:
-        
             #Save instance of Photo  
             super(Strain, self).save() 
 

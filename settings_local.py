@@ -1,5 +1,4 @@
-
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -21,3 +20,7 @@ EMAIL_HOST_USER = 'noreply@2theleft.la'
 EMAIL_HOST_PASSWORD = 'cuntfuck'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+##GOOGLE VOICE SETUP##
+GVOICE_EMAIL = 'kevindpostal@gmail.com'
+GVOICE_PASS =  '121288b554wmrq'
