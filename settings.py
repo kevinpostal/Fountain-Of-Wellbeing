@@ -1,10 +1,11 @@
 from settings_local import *
 import os
+import django
+
 # Django settings for project.
 PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
+DJANGO_ROOT = os.path.dirname(os.path.realpath(django.__file__))
 
-
-GRAPPELLI_ADMIN_TITLE = 'FWBLA'
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -50,18 +51,26 @@ SECRET_KEY = '*o6b1zgsf5uh3i9f&jzqvfr#@cu($i0c36*kb2!q6=$d(%o6ca'
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.load_template_source',
     'django.template.loaders.app_directories.load_template_source',
-#     'django.template.loaders.eggs.load_template_source',
 )
+
 
 MIDDLEWARE_CLASSES = (
     'django.middleware.gzip.GZipMiddleware',
- #  'django.middleware.cache.UpdateCacheMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
- #  'django.middleware.cache.FetchFromCacheMiddleware',
 )
+
+TEMPLATE_CONTEXT_PROCESSORS =  (
+        "django.core.context_processors.auth",
+        "django.core.context_processors.debug",
+        "django.core.context_processors.i18n",
+        "django.core.context_processors.media",
+        "django.core.context_processors.request",
+        "grappelli.context_processors.admin_template_path",
+)
+
 
 ROOT_URLCONF = 'urls'
 
@@ -74,18 +83,19 @@ TEMPLATE_DIRS = (
 
 INSTALLED_APPS = (
     'grappelli',
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
-    'django.contrib.admin',
     'django.contrib.flatpages',
     'budadex',
     'contact_form',
     'flatcontent',
-    'text_runner',
     'django_extensions',
 )
+#GRAPPELLI
+GRAPPELLI_ADMIN_TITLE = 'FWBLA'
 
 #GOOGLE_ANALYTICS
 GOOGLE_ANALYTICS_MODEL = True

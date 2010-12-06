@@ -10,7 +10,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
-    (r'^grappelli/', include('grappelli.urls')),     
+    (r'^grappelli/', include('grappelli.urls')),  
         
     # Contact Page Urls 
     (r'^contact/', include('contact_form.urls')),
@@ -19,10 +19,7 @@ urlpatterns = patterns('',
     (r'^menu/', 'budadex.views.menu_view'),
 
     #Admin
-    (r'^admin/(.*)', admin.site.root),
-
-    #Text_Runner
-    (r'^text/(?P<user_ids>.*)/$', 'text_runner.views.send_text',),
+    (r'^admin/', include(admin.site.urls)),
 
     # Home Redirect
     (r'^$', 'django.views.generic.simple.redirect_to', {'url':'/home'})
