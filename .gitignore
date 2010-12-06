@@ -1,5 +1,6 @@
 *.pyc
 *.swap
+gunicorn*
 pip-log.txt
 wsgi_handler.py
 settings_local.py
